@@ -1,0 +1,51 @@
+{
+  "name": "code-helper",
+  "displayName": "Code Helper",
+  "description": "Offers intelligent code refactoring suggestions to improve code quality with github copilot chat.",
+  "version": "0.0.1",
+  "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "code-helper",
+        "fullName": "Code Helper",
+        "name": "code-helper",
+        "description": "Please select available commands",
+        "isSticky": true,
+        "commands": [
+          {
+            "name": "refactor",
+            "description": "Write your additional requests here"
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.95.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "vscode-cache": "^0.3.0"
+  }
+}
