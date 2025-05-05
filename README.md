@@ -13,7 +13,8 @@ This Visual Studio Code extension assists developers by providing coding suggest
 ## Installation
 
 ### Using VSIX File
-1. Download the latest release from the **Releases** section.
+
+1. You can download the extension directly from the following link: [Download Extension](./code-helper-0.0.1.vsix)
 2. Open Visual Studio Code.
 3. Press `Ctrl+Shift+X` to open the Extensions view.
 4. Click on the `...` icon in the top-right corner of the Extensions view and select **Install from VSIX...**.
@@ -22,14 +23,16 @@ This Visual Studio Code extension assists developers by providing coding suggest
 Alternatively, you can install the extension using the command line:
 
 ```sh
-code --install-extension path/to/GitHub-Copilot-Cobol-Extension.vsix
+code --install-extension path/to/code-helper-0.0.1.vsix
 ```
 
 To uninstall the extension, you can use the command line:
 
 ```sh
-code --uninstall-extension path/to/GitHub-Copilot-Cobol-Extension.vsix
+code --uninstall-extension path/to/code-helper-0.0.1.vsix
 ```
+
+### Using Code
 
 1. Install the required dependencies:
    ```sh
